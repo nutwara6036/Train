@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Firebase</title>
+</head>
+
+<body>
+    <h1 id="bigone"></h1>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js">
+    </script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCnuXX9vs9vms3H43YqHGjJJ9vorgyfN2w",
+            authDomain: "db-ionics-tester.firebaseapp.com",
+            databaseURL: "https://db-ionics-tester.firebaseio.com",
+            projectId: "db-ionics-tester",
+            storageBucket: "db-ionics-tester.appspot.com",
+            messagingSenderId: "959901622941",
+            appId: "1:959901622941:web:b0d07747c2bc0575f62a74",
+            measurementId: "G-D8H6TJZHLF"
+        };
+        firebase.initializeApp(config);
+        var bigone = document.getElementById('bigone');
+        var dbRef = firebase.database().ref('/user/').child('name');
+        dbRef.on('value', snap => bigone.innerText = snap.val());
+    </script>
+</body>
+
+</html>
