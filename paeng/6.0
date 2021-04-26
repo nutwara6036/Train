@@ -1,0 +1,7 @@
+C:\Users\nutwara\AppData\Roaming\npm\ng -> C:\Users\nutwara\AppData\Roaming\npm\node_modules\@angular\cli\bin\ng
+
+> @angular/cli@11.2.10 postinstall C:\Users\nutwara\AppData\Roaming\npm\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
++ @angular/cli@11.2.10
+added 242 packages from 181 contributors in 30.682s
